@@ -177,10 +177,35 @@ li a:hover:not(.active) {
  
 
  </div> 
- <div class="pageContent" id="grad1">
+ <style>
+    .image-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background-color: white;
+        padding: 20px;
+        border: 2px solid #ccc;
+    }
 
+    .image-container img {
+        max-width: 100%; /* Limit image width to container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add spacing between images */
+    }
+</style>
+</head>
+<body>
+<div class="image-container">
+	<a href="https://www.w3schools.com"><img width="50%" src="images/w3schools.png" alt="W3Schools"></a>
+	<p align="center" style="font-size: 50px;"><b>Our Sponsors!</b></p>
+	<a href="https://www.udemy.com"><img align="right" width="50%" src="images/udemy.png" alt="Udemy"></a>
+</div>
+<div class="image-container">
+	<a href="https://www.khanacademy.org"><img width="50%" src="images/khan.png" alt="Khan Academy"></a>
+	<a href="https://www.coursera.org"><img hspace="100px" align="center" width="50%" src="images/coursera.png" alt="Coursera"></a>
+	<a href="https://www.codecademy.com"><img align="right" width="50%" src="images/codecadamy.png" alt="Codecademy"></a>
+</div>
 
- </div>
 
  <div class="pageFooter">
  <p align= "center" style="color:White">Copyright @ Hot Beans Web Design Ltd 2024</p>
