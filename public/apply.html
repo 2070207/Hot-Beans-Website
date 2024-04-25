@@ -53,6 +53,7 @@ BODY {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 2px;
+  
 	}
 
 .pageRightPanel{
@@ -65,19 +66,43 @@ BODY {
 	padding: 5px; 
 	}
 	
-.pageContent{
+	.pageContent{
 	background-color: #000A44;
 	float: left;
 	clear: none;
 	min-height: 550px;
-	width: 1080px;
+	width: 1280px;
 	box-sizing: border-box;
 	padding: 10px;
-	img {
-		box-shadow: 0px 0px 5px white;
-		border-radius: 5px;
+	
+
 	}
 
+	.contact-information {
+    position:relative;
+    max-width: 350px;
+	right: 125px;
+	bottom: 505px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+    }
+	
+.pageFooter{
+	background-color: #000A3A;
+	float: left;
+	clear: none;
+	min-height: 20px;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0px;
+
+  
 	}
 	
 .pageFooter{
@@ -142,19 +167,21 @@ li a:hover:not(.active) {
   
  </style>
  
- <title>Homepage - Hot Beans Web Development</title>
+ <title>Contact Us - Hot Beans Web Development</title>
  	<link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
 <div class="page">
  <div class="pageHeader">
  <table style="width:100%">
-  <tr>
-    <th> <img  align="left" src="logoG.png" width="128" height="128"></th>
-    <th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
-    <th align = "left"; style="color:#001160;" >      745389573498552354</th>
- 
-  </tr>
+	<tr>
+		<th> 
+			<a href="index.html">
+				<img  align="left" src="logoG.png" width="128" height="128"></th>
+			</a>
+		<th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
+		<th align = "left"; style="visibility: hidden;" >      745389573498552354</th>
+	  </tr>
  
 </table>
 
@@ -165,12 +192,12 @@ li a:hover:not(.active) {
  <div class="pageNavigationBar">
 
 <ul>
-  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="index.html">Home</a></li>
   <li><a href="StaffInformation.html">Staff Profiles</a></li>
   <li><a href="jobs.html">Jobs</a></li>
   <li><a href="courses.html">Courses</a></li>
   <li><a href="contact.html">Contact Us</a></li>
-  <li><a href="apply.html">Apply</a></li>
+  <li><a class="active" href="apply.html">Apply</a></li>
   <li><a href="sponsors.html">Sponsors</a></li>
   <li><a href="legal.html">Legal</a></li>
 
@@ -179,59 +206,99 @@ li a:hover:not(.active) {
 
  </div> 
  <div class="pageContent" id="grad1">
- 	<h style="color:white;font-size:150%;"><b>Who we are?</b></h>
- <p style="font-size:90%;color:White;">We are a Hot Beans Web Development, a web development company, offering custom web designs, custom web applications, and custom web design along with development. We specialize in small and medium-sized businesses, offering high-quality services matching those who demand outrageous. Our team is passionate about what we do, and we make it our mission to help our clients succeed in thier web adventures. We value strong morale and hard work, and we’re committed to providing the best services to our esteemed clients.</p>
-
- <p style="font-size:90%;color:White;">In addition to creating websites for our esteemed clients, we also provide courses of varying levels from novices to web development veterans at a competitive price, you will find many other companies offering courses that are tenfold of our amazing prices. Our courses will provide an individual with the required qualifications needed for their future endeavours.</p>
-
- 
-<p class="aligncenter">
- <iframe width="461" height="307"
-src="https://www.youtube.com/embed/GwiYgOAZNiY">
-</iframe>
 
 
- <style>
-.aligncenter {
-    text-align: center;
+
+	
+
+
+
+	
+
+	
+	<div class="contact-form">
+		<form action="mailto:contact@hotbeanswebdev.com" method="post">
+		  <div class="input-container">
+			<input type="text" id="name" name="name" placeholder="Your Name" required>
+		  </div>
+		  <div class="input-container">
+			<input type="email" id="email" name="email" placeholder="Your Email" required>
+		  </div>
+		  <div class="input-container">
+			<input type="text" id="subject" name="subject" placeholder="Subject" required>
+		  </div>
+		  <div class="input-container">
+			<select id="course" name="course" required>
+			  <option value="" disabled selected>Select a course or job</option>
+			  <option value="Beginner Web Development">Course: Beginner/Intermediate Web Development</option>
+			  <option value="Advanced Web Development">Course: Advanced Web Development</option>
+			  <option value="Programming Certification">Course: Programming Certification</option>
+			  <option value="Jr Web Developer">Job: Jr. Web Developer</option>
+			  <option value="Sr Web Developer">Job: Sr. Web Developer</option>
+			  <option value="Database Manager">Job: Database Manager</option>
+			</select>
+		  </div>
+		  <div class="input-container">
+			<textarea id="enquiry" name="enquiry" placeholder="Your Enquiry" required></textarea>
+			<button class="button" type="submit">Contact</button>
+		  </div>
+		</form>
+	  </div>
+	  
+  
+
+  <style>
+	  .contact-form {
+	position:relative;
+    max-width: 500px;
+    height: 43vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+	.input-container {
+	  margin-bottom: 15px;
+	}
+  
+	input[type="text"],
+	input[type="email"],
+	textarea {
+	  width: 99%;
+	  padding: 10px;
+	  border: 0px solid #ccc;
+	  border-radius: 5px;
+	  font-size: 14px;
+	}
+  
+	textarea {
+	  resize: vertical;
+	}
+	.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
 }
-</style>
-
-<head>
-<script> 
-var images = ["images/webdesign.jpg", "images/webdev1.png", "images/webdev2.jpg"]; // List your images here
-var index = 0;
-
-function changeImage() {
-    var img = document.getElementById("slide");
-    img.src = images[index];
-    index = (index + 1) % images.length; // Loop back to the first image
+.button:hover {
+  background-color: #555;
 }
+  </style>
+  </div>
 
-setInterval(changeImage, 5000); // Change image every X seconds
-</script>
-</head>
-<body>
-
-<img id="slide" src="images/webdesign.jpg" width="461" height="307">
-
-</body>
-</html>
-
-</style>
-</p>
- 
- </div>
- <div class="pageRightPanel">
- 
-	<a href="sponsors.html">
-		<img align="center" width="190px" height="540px" src="images/sponsorad.png" title="Check out our sponsors!">
-	</a>
-
- </div>
  <div class="pageFooter">
  <p align= "center" style="color:White">Copyright @ Hot Beans Web Design Ltd 2024</p>
 </div>
+
 
 <div class="pageFooterImage">
 

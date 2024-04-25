@@ -68,7 +68,7 @@ BODY {
 	
 .pageContent {
         background-color: #000A44;
-        min-height: 1200px;
+        min-height: 600px;
         width: 1280px;
         box-sizing: border-box;
         padding: 10px;
@@ -81,9 +81,9 @@ BODY {
         padding: 20px;
         margin-bottom: 20px;
         display: inline-block; /* or inline-flex */
+		width: calc(33.33% - 50px); /* Adjust width to fit 3 boxes side by side */
 		border-radius: 5px;
 		border: 1px solid #000;
-
     }
 
 .pageFooter{
@@ -155,12 +155,14 @@ li a:hover:not(.active) {
 <div class="page">
  <div class="pageHeader">
  <table style="width:100%">
-  <tr>
-    <th> <img  align="left" src="logoG.png" width="128" height="128"></th>
-    <th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
-    <th align = "left"; style="color:#001160;" >      745389573498552354</th>
- 
-  </tr>
+	<tr>
+		<th> 
+			<a href="index.html">
+				<img  align="left" src="logoG.png" width="128" height="128"></th>
+			</a>
+		<th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
+		<th align = "left"; style="visibility: hidden;" >      745389573498552354</th>
+	  </tr>
  
 </table>
 
@@ -174,55 +176,45 @@ li a:hover:not(.active) {
   <li><a href="index.html">Home</a></li>
   <li><a href="StaffInformation.html">Staff Profiles</a></li>
   <li><a href="jobs.html">Jobs</a></li>
-  <li><a href="courses.html">Courses</a></li>
+  <li><a class="active" href="courses.html">Courses</a></li>
   <li><a href="contact.html">Contact Us</a></li>
   <li><a href="apply.html">Apply</a></li>
   <li><a href="sponsors.html">Sponsors</a></li>
-  <li><a class="active" href="legal.html">Legal</a></li>
+  <li><a href="legal.html">Legal</a></li>
 </ul>
  
 
  </div> 
  <div class="pageContent" id="grad1">
 	<div class="courseBox">
-		<h3 align="center">Legal Information</h3>
-		<h4>1. Acceptance of Terms</h4>
-		<p>- By accessing and using the Hot Beans Web Development website (“Service”), you agree to comply with these Terms of Service. If you do not agree with any part of these terms, please refrain from using our Service.</p>
-		
-		<h4>2. Definitions</h4>
-		<p>- Hot Beans Web Development: Refers to our company, its website, and services.</p>
-		<p>- User: Anyone who accesses or uses our services.</p>
-		<p>- Services: Includes web development, design, consulting, and related offerings.</p>
-
-		<h4>3. User Responsibilities</h4>
-		<p>- You must be at least 18 years old to use our services.</p>
-		<p>- You agree not to misuse our services or violate any applicable laws.</p>
-		<p>- You are responsible for maintaining the confidentiality of your account credentials.</p>
-
-		<h4>4. Intellectual Property</h4>
-		<p>- All content on our website is protected by copyright and other intellectual property laws.</p>
-		<p>- You may not reproduce, modify, or distribute our content without permission.</p>
-
-		<h4>5. Limitation of Liability</h4>
-		<p>- Hot Beans Web Development is not liable for any direct, indirect, or consequential damages arising from your use of our services.</p>
-		<p>- We do not guarantee the accuracy, completeness, or reliability of our content.</p>
-
-		<h4>6. Termination</h4>
-		<p>- We reserve the right to terminate or suspend your access to our services at any time.</p>
-		<p>- Upon termination, all provisions of these terms that should survive will continue to apply.</p>
-
-		<h4>7. Governing Law</h4>
-		<p>- These terms are governed by the laws of [Your Jurisdiction].</p>
-		<p>- Any disputes will be resolved through arbitration or in a court of competent jurisdiction.</p>
-
-		<h4>8. Changes to Terms</h4>
-		<p>- We may update these terms periodically. Check our website for the latest version.</p>
-
-		<h4>9. Contact Us</h4>
-		<p>- If you have any questions or concerns about these terms, please contact us at <a href="mailto:contact@hotbeanswebdev.com">contact@hotbeanswebdev.com</a>.</p>
+		<h3>Beginner to Intermediate Web Development</h3>
+		<p>In this course you will learn the fundamental skills required to create stunning and interactive websites. You will learn how to use <b>HTML</b> to structure websites and <b>CSS</b> to style your pages and make them truly stand out. In addition, you will also learn the ropes of <b>JavaScript</b> that will revolutionize any website you create.</p>
+		<p>You will also learn the back-end basics with <b>Node.js</b> and <b>Express.js</b>. You will learn how APIs work along with creating your own and building server applications.</p>
+		<p>Other than learning the programming side of web development, you will also learn how websites utilize Search Engine Optimizations to appear at the top of search results.</p>
+		<p>You will learn the debugging process of websites to have a further grasp on how websites function.</p>
+		<p>Upon the completion of this course you will be awarded with a certification allowing you to pursue further education or take up a web development job.</p>
+		<p align="center"> <a href="apply.html">Apply Now</a></p>
 
 	</div>
 
+	<div class="courseBox">
+		<h3>Advanced Web Development:</h3>
+		<p>In this course you will learning high-level web development skills, this covers many different areas of technology where you will learn how to make real-world web applications.</p>
+		<p>You will learn how to create responsive applications by using <b>CSS</b> technologies like <b>flexbox</b> and <b>bootstrap</b>. Learn how to build <b>JSON APIs</b> using <b>Node.js</b>, <b></b>Express.js</b> and <b>MongoDB</b>.</p>
+		<p>Become proficient with the front-end library: <b>React</b>. Branch out your skills with <b>SQL</b>, <b>C#</b> and <b>.NET Framework</b>. In addition, you will learn how to work with databases.</p>
+		<p>If you are serious about becoming a skilled web developer than this course is for you.</p>
+		<p>Upon completing this course you will gain a certification allowing you to work in high-level programming jobs and increase your networking opportunities.</p>
+		<p align="center"> <a href="apply.html">Apply Now</a></p>
+
+	</div>
+
+	<div class="courseBox">
+		<h3>Programming Certification:</h3>
+		<p>This course provides you with an opportunity to gain a programming certification to pursue further education.</p>
+		<p>In this course you learn all of the essential skills needed to be a skilled software developer, whether you are a beginner or a seasoned coder you will find a place in this course.</p>
+		<p>You will lean the fundamental concepts within programming like variables, data types and control structures. You will become familiar with a few programming languages, <b>Python</b>, <b>Java</b> and a choice between <b>Ruby</b>, <b>C#</b> or <b>Rust</b>.</p>
+		<p align="center"> <a href="apply.html">Apply Now</a></p>
+	</div>
 
 	
 </div>

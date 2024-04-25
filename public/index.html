@@ -8,9 +8,11 @@
  <style>
 BODY {
 	margin: 0px 0px 0px 0px;
-	background-color: white;
+	background-color: #001160;
+	background-image: linear-gradient(180deg, #0103eb, #000162);
 	font-family: arial;
 	font-size: 12pt;
+	background-attachment: fixed
 	}
 
 
@@ -51,7 +53,6 @@ BODY {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 2px;
-  
 	}
 
 .pageRightPanel{
@@ -69,11 +70,12 @@ BODY {
 	float: left;
 	clear: none;
 	min-height: 550px;
-	width: 1280px;
+	width: 1080px;
 	box-sizing: border-box;
 	padding: 10px;
 	img {
-		border: 3px solid #FFFFFF;
+		box-shadow: 0px 0px 5px white;
+		border-radius: 5px;
 	}
 
 	}
@@ -147,12 +149,14 @@ li a:hover:not(.active) {
 <div class="page">
  <div class="pageHeader">
  <table style="width:100%">
-  <tr>
-    <th> <img  align="left" src="logoG.png" width="128" height="128"></th>
-    <th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
-    <th align = "left"; style="color:#001160;" >      745389573498552354</th>
- 
-  </tr>
+	<tr>
+		<th> 
+			<a href="index.html">
+				<img  align="left" src="logoG.png" width="128" height="128"></th>
+			</a>
+		<th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
+		<th align = "left"; style="visibility: hidden;" >      745389573498552354</th>
+	  </tr>
  
 </table>
 
@@ -163,22 +167,70 @@ li a:hover:not(.active) {
  <div class="pageNavigationBar">
 
 <ul>
-  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
   <li><a href="StaffInformation.html">Staff Profiles</a></li>
-  <li><a class="active" href="jobs.html">Jobs</a></li>
+  <li><a href="jobs.html">Jobs</a></li>
   <li><a href="courses.html">Courses</a></li>
   <li><a href="contact.html">Contact Us</a></li>
   <li><a href="apply.html">Apply</a></li>
   <li><a href="sponsors.html">Sponsors</a></li>
+  <li><a href="legal.html">Legal</a></li>
+
 </ul>
  
 
  </div> 
  <div class="pageContent" id="grad1">
+ 	<h style="color:white;font-size:150%;"><b>Who we are?</b></h>
+ <p style="font-size:90%;color:White;">We are a Hot Beans Web Development, a web development company, offering custom web designs, custom web applications, and custom web design along with development. We specialize in small and medium-sized businesses, offering high-quality services matching those who demand outrageous. Our team is passionate about what we do, and we make it our mission to help our clients succeed in thier web adventures. We value strong morale and hard work, and we’re committed to providing the best services to our esteemed clients.</p>
 
+ <p style="font-size:90%;color:White;">In addition to creating websites for our esteemed clients, we also provide courses of varying levels from novices to web development veterans at a competitive price, you will find many other companies offering courses that are tenfold of our amazing prices. Our courses will provide an individual with the required qualifications needed for their future endeavours.</p>
+
+ 
+<p class="aligncenter">
+ <iframe width="461" height="307"
+src="https://www.youtube.com/embed/GwiYgOAZNiY">
+</iframe>
+
+
+ <style>
+.aligncenter {
+    text-align: center;
+}
+</style>
+
+<head>
+<script> 
+var images = ["images/webdesign.jpg", "images/webdev1.png", "images/webdev2.jpg"]; // List your images here
+var index = 0;
+
+function changeImage() {
+    var img = document.getElementById("slide");
+    img.src = images[index];
+    index = (index + 1) % images.length; // Loop back to the first image
+}
+
+setInterval(changeImage, 5000); // Change image every X seconds
+</script>
+</head>
+<body>
+
+<img id="slide" src="images/webdesign.jpg" width="461" height="307">
+
+</body>
+</html>
+
+</style>
+</p>
+ 
+ </div>
+ <div class="pageRightPanel">
+ 
+	<a href="sponsors.html">
+		<img align="center" width="190px" height="540px" src="images/advert.png" title="Check out our sponsors!">
+	</a>
 
  </div>
-
  <div class="pageFooter">
  <p align= "center" style="color:White">Copyright @ Hot Beans Web Design Ltd 2024</p>
 </div>
@@ -209,5 +261,5 @@ li a:hover:not(.active) {
 
  </div>
 </div>
-
+<script src="script.js"></script>
 </body></html>

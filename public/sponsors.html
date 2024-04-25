@@ -74,6 +74,9 @@ BODY {
 	width: 1280px;
 	box-sizing: border-box;
 	padding: 10px;
+	img {
+		border: 3px solid #FFFFFF;
+	}
 
 	}
 	
@@ -139,19 +142,21 @@ li a:hover:not(.active) {
   
  </style>
  
- <title>Apply - Hot Beans Web Development</title>
+ <title>Our Sponsors - Hot Beans Web Development</title>
  	<link rel="icon" type="image/png" href="images/icon.png">
 </head>
 <body>
 <div class="page">
  <div class="pageHeader">
  <table style="width:100%">
-  <tr>
-    <th> <img  align="left" src="logoG.png" width="128" height="128"></th>
-    <th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
-    <th align = "left"; style="color:#001160;" >      745389573498552354</th>
- 
-  </tr>
+	<tr>
+		<th> 
+			<a href="index.html">
+				<img  align="left" src="logoG.png" width="128" height="128"></th>
+			</a>
+		<th> <img align="center" src="images/banner.png" style="width:480px;"> </th>
+		<th align = "left"; style="visibility: hidden;" >      745389573498552354</th>
+	  </tr>
  
 </table>
 
@@ -167,18 +172,42 @@ li a:hover:not(.active) {
   <li><a href="jobs.html">Jobs</a></li>
   <li><a href="courses.html">Courses</a></li>
   <li><a href="contact.html">Contact Us</a></li>
-  <li><a class="active" href="apply.html">Apply</a></li>
-  <li><a href="sponsors.html">Sponsors</a></li>
+  <li><a href="apply.html">Apply</a></li>
+  <li><a class="active" href="sponsors.html">Sponsors</a></li>
   <li><a href="legal.html">Legal</a></li>
-
 </ul>
  
 
  </div> 
- <div class="pageContent" id="grad1">
+ <style>
+    .image-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background-color: white;
+        padding: 20px;
+        border: 2px solid #ccc;
+    }
 
+    .image-container img {
+        max-width: 100%; /* Limit image width to container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add spacing between images */
+    }
+</style>
+</head>
+<body>
+<div class="image-container">
+	<a href="https://www.w3schools.com"><img width="50%" src="images/w3schools.png" alt="W3Schools"></a>
+	<p align="center" style="font-size: 50px;"><b>Our Sponsors!</b></p>
+	<a href="https://www.udemy.com"><img align="right" width="50%" src="images/udemy.png" alt="Udemy"></a>
+</div>
+<div class="image-container">
+	<a href="https://www.khanacademy.org"><img width="50%" src="images/khan.png" alt="Khan Academy"></a>
+	<a href="https://www.coursera.org"><img hspace="100px" align="center" width="50%" src="images/coursera.png" alt="Coursera"></a>
+	<a href="https://www.codecademy.com"><img align="right" width="50%" src="images/codecadamy.png" alt="Codecademy"></a>
+</div>
 
- </div>
 
  <div class="pageFooter">
  <p align= "center" style="color:White">Copyright @ Hot Beans Web Design Ltd 2024</p>
